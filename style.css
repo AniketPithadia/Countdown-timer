@@ -1,0 +1,51 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(./stars.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins","sans-serif";
+  min-height: 100vh;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .heading {
+  font-size: 1.5rem;
+}
+
+.container .count-container .count {
+  font-size: 1.3rem;
+  margin: -2rem 2rem;
+}
+
+.container .count-container #months, .container .count-container #days, .container .count-container #hours, .container .count-container #minutes, .container .count-container #seconds {
+  font-size: 4.5rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
