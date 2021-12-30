@@ -1,7 +1,25 @@
-const newDate = "1 Jan 2024";
+const providedDate = document.getElementById("inputDate");
+const formEl = document.getElementById("form");
+formEl.addEventListener('submit',(e)=> {
+    e.preventDefault();
+    const supplyDate = providedDate.value;
+    formateDate(supplyDate);
+});
+// form.addEventListener("submit",setInterval(countdown,1000));
+function formateDate(newDate){
 
-function countdown(){
-    const userDate = new Date(newDate);
+    let formattedDate = new Date(newDate);
+    
+    let day = formattedDate.getDay();
+    let month = formattedDate.getMonth();
+    let year =  formattedDate.getFullYear();
+    
+    const inputDate = `${day+1} ${month+1} ${year}`;
+    countdown(inputDate);
+}
+// const newDate = "1 Jan 2024";
+function countdown(inputDate){
+    const userDate = new Date(inputDate);
     const currentDate = new Date();
 
     let totalSeconds = Math.floor((userDate - currentDate) / 1000);
@@ -21,4 +39,4 @@ function countdown(){
     let seconds = Math.floor(totalSeconds % 60);
     document.getElementById("seconds").innerHTML = seconds;
 }
-document.addEventListener("load",setInterval(countdown,1000));
+

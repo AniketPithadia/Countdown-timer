@@ -36,11 +36,58 @@ body {
 
 .container .heading {
   font-size: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .heading #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+
+.container .heading #form #inputDate, .container .heading #form button {
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.container .heading #form button {
+  width: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.container .heading #form button:hover {
+  background-color: #ccc;
+  cursor: pointer;
 }
 
 .container .count-container .count {
   font-size: 1.3rem;
   margin: -2rem 2rem;
+  text-align: center;
 }
 
 .container .count-container #months, .container .count-container #days, .container .count-container #hours, .container .count-container #minutes, .container .count-container #seconds {

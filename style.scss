@@ -24,11 +24,44 @@ body{
 
   .heading{
     font-size: 1.5rem;
+    flex-direction : column;
+    #form{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+
+      #inputDate,button{
+        outline : none;
+        border: none;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        width:100%;      
+        height:100%;
+        display:block;
+        border-radius:10px;
+        margin-bottom:1rem;
+        cursor: pointer;
+        background-color:#fff
+      }
+      button{
+        width: 50%;
+        justify-self: center;
+      }
+      button:hover{
+        background-color: #ccc;
+        cursor: pointer;
+      }
+    }
   }
+
   .count-container{
     .count{
       font-size: 1.3rem;
       margin: -2rem 2rem;
+      text-align : center;
     }
     #months,#days,#hours,#minutes,#seconds{
       font-size: 4.5rem;
