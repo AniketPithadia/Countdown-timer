@@ -1,3 +1,3 @@
 Countdown-time 
 
-![plot](/home/aniket/Pictures/countdown-timer.png)
+![plot](image/countdown-timer.png)
